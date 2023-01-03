@@ -66,7 +66,7 @@ def cost_function(x, y, theta):
     cost = 0.5/y.shape[0] * (h(x, theta) - y).T @ (h(x, theta) - y)
     return np.squeeze(cost)
 
-def gradient_descend(x, y, theta, learning_rate=0.1, epochs=50):
+def gradient_descend(x, y, theta, learning_rate=0.1, epochs=100):
 # Calculates the gradient descend for each parameter and adjusts them.
 # Cost of each run is stored for monitoring purposes.
 
